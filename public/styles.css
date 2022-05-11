@@ -1,5 +1,5 @@
 *{
-    padding: 0%;
+    padding: 0;
     margin: 0;
 }
 
@@ -8,13 +8,25 @@
 }
 
 
-
-.container {
+/*
+.contenido {
     max-width: 1200px;
+    margin-left: 10%;
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
     width: 80%;
+
+}
+*/
+
+.contenido {
+    padding: 10%;
+    padding-top: 1%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    background-color: #FDEB1B ;
 }
 
 .card{
@@ -23,15 +35,99 @@
 
 .tituloConFotografia{
 
-    background-image: url(./assets/foto_coveñas.jpeg);
+    background-image: url(./assets/Evento_Fotografia/foto_coveñas.jpeg);
     background-position: center;
     background-size: cover;
+
     
-    height: 400px;
+    
+    height: 800px;
 
-    margin-bottom: 30px;
-    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 100px;
 
+}
+
+.tituloConFotografia h1 {
+    font-size: 60px;
+}
+
+.espacios{
+    height: 500px;
+
+    padding-top: 3%;
+    margin-bottom: 50px;
+
+    background-color: #fdea1b;
+
+}
+
+.espacios h2{
+    font-size: 60px;
+}
+
+.items{
+    margin-top: 30px;
+}
+
+.item{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.itemtitulo{
+    font-size: 30px;
+}
+
+.itemtext{
+    font-size: 25px;
+}
+
+.imagen{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen img{
+    width: 200px;
+    height: 200px;
+}
+
+.botonnegro{
+    text-decoration: none;
+    background-color: black;
+    color: #FDEB1B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+
+    font-size: 40px;
+
+    
+   
+}
+
+.botonnegro:hover{
+    color: black;
+    background-color: #FDEB1B;
+}
+
+.seccionBoton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    height: 150px;
 }
 
 
