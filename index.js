@@ -28,7 +28,17 @@ app.use('/api/login', require('./routs/usuario'));
 app.use('/api/participante', require('./routs/participante'));
 
 // Escuchar peticiones
-
-app.listen( process.env.PORT, () => {
+/*
+app.listen( port, () => {
     console.log(`Servidor corriendo en puerto ${process.env.PORT}` );
 } )
+*/
+
+let port = process.env.PORT;
+if(port == null || port == ""){
+  port = 5000;
+};
+
+app.listen(port, function() {
+  console.log(`Servidor corriendo en puerto ${port}`);
+});
